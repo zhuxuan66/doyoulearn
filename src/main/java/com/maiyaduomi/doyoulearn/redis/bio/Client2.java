@@ -4,6 +4,11 @@ import java.io.*;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * 模拟连接redis的客户端，可以把它当成一个jedis
+ *
+ * bio：当某个客户端去连接操作redis server时，另一个客户端就需要等待
+ */
 public class Client2 {
 
     public static void main(String[] args) throws IOException {

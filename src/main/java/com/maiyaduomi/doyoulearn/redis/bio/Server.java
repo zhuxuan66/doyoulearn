@@ -9,6 +9,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * 模拟redis server
+ */
 public class Server {
 
     public static void main(String[] args) throws IOException {
@@ -18,6 +21,7 @@ public class Server {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream(), StandardCharsets.UTF_8));
         String content;
         while (!StringUtils.isEmpty(content = bufferedReader.readLine())) {
+            System.out.println("----------------process data");
             System.out.println(content);
         }
     }
