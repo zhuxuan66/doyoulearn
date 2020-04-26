@@ -11,6 +11,8 @@ import java.nio.charset.StandardCharsets;
 
 /**
  * 模拟redis server
+ *
+ * accept(),readLine()都是阻塞的
  */
 public class Server {
 
